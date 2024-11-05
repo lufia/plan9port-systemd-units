@@ -1,0 +1,10 @@
+pkgbase = plan9port-systemd-units
+	pkgdesc = Systemd units for Plan 9 services
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://github.com/lufia/plan9port-systemd-units
+	arch = any
+	license = custom
+	depends = plan9port
+
+pkgname = plan9port-systemd-units

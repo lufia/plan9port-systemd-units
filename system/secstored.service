@@ -1,0 +1,11 @@
+[Unit]
+Description=secstored
+After=network.target
+
+[Service]
+Type=forking
+Environment=PLAN9=/usr/lib/plan9
+ExecStart=/usr/lib/plan9/bin/secstored
+
+[Install]
+WantedBy=multi-user.target

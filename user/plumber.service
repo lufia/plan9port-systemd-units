@@ -1,0 +1,11 @@
+[Unit]
+Description=plumber
+After=default.target
+
+[Service]
+Type=forking
+Environment=PLAN9=/usr/lib/plan9
+ExecStart=/usr/lib/plan9/bin/plumber
+
+[Install]
+WantedBy=default.target

@@ -5,6 +5,7 @@ After=default.target
 [Service]
 Type=simple
 Environment=PLAN9=/usr/lib/plan9
+Environment=PATH=/usr/bin:/usr/lib/plan9/bin
 ExecStart=/usr/lib/plan9/bin/fontsrv
 
 [Install]

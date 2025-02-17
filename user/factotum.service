@@ -5,6 +5,8 @@ After=graphical-session.target
 [Service]
 Type=forking
 Environment=PLAN9=/usr/lib/plan9
+Environment=PATH=/usr/bin:/usr/lib/plan9/bin
+Environment=secstore=localhost
 #LoadCredentialEncrypted=secstore.secret:%h/lib/secstore.key
 ExecStart=/usr/lib/plan9/bin/factotum
 ExecStartPost=bash -c 'test -f %h/lib/secstore.key && systemd-creds --user decrypt --name=secstore.secret %h/lib/secstore.key | secstore -iG factotum | 9p write -l factotum/ctl'

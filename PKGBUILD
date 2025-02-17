@@ -1,7 +1,7 @@
 # Maintainer: lufia <lufia@lufia.org>
 
 pkgname=plan9port-systemd-units
-pkgver=0.1.0
+pkgver=0.1.1
 pkgrel=1
 pkgdesc='Systemd units for Plan 9 services'
 arch=(any)

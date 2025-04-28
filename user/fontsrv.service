@@ -1,6 +1,7 @@
 [Unit]
 Description=fontsrv
-After=default.target
+BindsTo=graphical-session.target
+After=graphical-session.target
 
 [Service]
 Type=simple
@@ -9,4 +10,4 @@ Environment=PATH=/usr/bin:/usr/lib/plan9/bin
 ExecStart=/usr/lib/plan9/bin/fontsrv
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target

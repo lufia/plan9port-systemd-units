@@ -1,6 +1,7 @@
 [Unit]
 Description=plumber
-BindsTo=graphical-session.target
+Documentation=man:plumber(4)
+PartOf=graphical-session.target
 After=graphical-session.target
 
 [Service]
@@ -10,4 +11,4 @@ Environment=PATH=/usr/bin:/usr/lib/plan9/bin
 ExecStart=/usr/lib/plan9/bin/plumber
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target

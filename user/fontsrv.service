@@ -1,12 +1,13 @@
 [Unit]
 Description=fontsrv
-BindsTo=graphical-session.target
+Documentation=man:fontsrv(4)
+PartOf=graphical-session.target
 After=graphical-session.target
 
 [Service]
 Type=simple
 Environment=PLAN9=/usr/lib/plan9
-Environment=PATH=/usr/bin:/usr/lib/plan9/bin
+Environment=PATH=/usr/lib/plan9/bin
 ExecStart=/usr/lib/plan9/bin/fontsrv
 
 [Install]

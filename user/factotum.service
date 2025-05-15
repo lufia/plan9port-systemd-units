@@ -1,6 +1,7 @@
 [Unit]
 Description=factotum
-BindsTo=graphical-session.target
+Documentation=man:factotum(4)
+PartOf=graphical-session.target
 After=graphical-session.target
 
 [Service]
